@@ -1,0 +1,18 @@
+un equipo tienes muchos jugadores. y un jugador tiene un equipo
+
+JUGADOR
+nombre
+equipo
+dorsal
+
+EQUIPO
+nombre
+division
+
+SUMMARY
+
+2 services classes
+
+2 webpages for inserting data
+
+2 webpages to list results from queries
