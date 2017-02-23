@@ -58,7 +58,7 @@ public class ListDesayunoPage extends WebPage{
 	public void addViewListForm() {
 		Desayuno desayuno = new Desayuno();
 		listDesayuno = service.addListDesayuno();
-		ListView<Desayuno> desayunos = new ListView<Desayuno>("desayunos-group", listDesayuno) {
+		ListView<Desayuno> desayunos = new ListView<Desayuno>("desayuno-group", listDesayuno) {
 			@Override
 			protected void populateItem(ListItem item) {
 				Desayuno desayuno = (Desayuno) item.getModelObject();
