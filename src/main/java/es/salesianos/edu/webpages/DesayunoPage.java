@@ -44,10 +44,10 @@ public class DesayunoPage extends WebPage{
 			}
 		};
 		
-		form.add(new Label("nameAlumnoLabel", getString("alumno.name")));
-		form.add(new Label("bocadilloLabel", getString("bocadillo")));
-		form.add(new Label("naranjaLabel", getString("naranja")));
-		form.add(new RequiredTextField("alumno.name"));
+		form.add(new Label("alumnoLabel", "Nombre del alumno"));
+		form.add(new Label("bocadilloLabel", "Bocadillo"));
+		form.add(new Label("naranjaLabel", "Naranja"));
+		form.add(new RequiredTextField("alumno"));
 		form.add(new RequiredTextField("bocadillo"));
 		form.add(new RequiredTextField("naranja"));
 		
