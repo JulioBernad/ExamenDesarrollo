@@ -6,7 +6,7 @@ import java.util.List;
 import org.apache.logging.log4j.Logger;
 
 import es.salesianos.edu.connection.DataBase;
-import es.salesianos.edu.models.Team;
+import es.salesianos.edu.models.Desayuno;
 
 
 @org.springframework.stereotype.Repository
@@ -22,14 +22,14 @@ public class Repository{
 		this.db = db;
 	}
 	
-	public boolean insertTeam (Team team) {
-		db.getTeams().add(team);
+	public boolean insertDesayuno (Desayuno desayuno) {
+		db.getDesayuno().add(desayuno);
 		return true;
 	}
 	
-	public List<Team> listTeams() {
+	public List<Desayuno> listTeams() {
 		
-		return db.getTeams();
+		return db.getDesayuno();
 	}
 
 	

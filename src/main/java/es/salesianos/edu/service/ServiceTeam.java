@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import es.salesianos.edu.models.Team;
+import es.salesianos.edu.models.Desayuno;
 import es.salesianos.edu.repository.Repository;
 @Component
 public class ServiceTeam {
@@ -14,8 +14,8 @@ public class ServiceTeam {
 	@Autowired
 	Repository repository;
 		
-	public boolean insert(Team team) {
-		repository.insertTeam(team);
+	public boolean insert(Desayuno desayuno) {
+		repository.insertDesayuno(desayuno);
 		
 		return true;
 	}
@@ -25,7 +25,7 @@ public class ServiceTeam {
 		return true;
 	}
 	
-	public List<Team> addListTeam() {
-		return repository.getDb().getTeams();
+	public List<Desayuno> addListDesayuno() {
+		return repository.getDb().getDesayuno();
 	}
 }
